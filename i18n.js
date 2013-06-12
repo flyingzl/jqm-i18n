@@ -110,6 +110,6 @@
 			var $page = $( evt.target );
 			i18n.applyI18n( $().add( $page ).add( $page.find( "script" ) ) );
 		});
-   }		
+   }
 
 })( jQuery, this );
