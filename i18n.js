@@ -1,8 +1,10 @@
-(function( mobile, window, undefined ) {
+(function( $, window, undefined ) {
 		
 	var language =  window.navigator.language.replace("-","_"),
 
 		defaultFolder = "i18n",
+
+		mobile = $.mobile,
 
 		version = mobile.version;
 	
@@ -110,4 +112,4 @@
 		});
    }		
 
-})( $.mobile, this );
+})( jQuery, this );
