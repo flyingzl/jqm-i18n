@@ -18,7 +18,7 @@ to use this plugin, you should do as follows：
 
 <div data-role="page" id='main' data-theme="b">
     <div data-role="header" data-theme="b">
-        <h1 **data-i18n**="main.header"></h1>
+        <h1 data-i18n="main.header"></h1>
     </div>
     <div data-role="content">
 		<a data-role="button" data-i18n="main.btn" id="btn"></a>
