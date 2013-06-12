@@ -1,6 +1,6 @@
 #INTRODUCTION
 
-jqm-i18n is lightweight i18n plugin for jQuery mobile.It can detect the browser language and download the i18n resouces and apply them automatically.
+jqm-i18n is lightweight **i18n**（internationalization） plugin for jQuery mobile.It can detect the browser language and download the i18n resouces and apply them automatically.
 
 
 #USAGE
