@@ -1,0 +1,21 @@
+{
+     "title": "i18n Demo",
+	 "main": {
+		"header": "Slide Demo",
+		"next": "Next Page",
+		"footer": "I am Footer",
+		"value": "2",
+		"btn": "Javascript template content"
+	 },
+	 
+	 "page2": {
+	 
+	     "next": {
+			"back": "back",
+			"header": "Demo",
+			"content": "I am the content",
+			"prev": "Prev Page"
+	     }
+	 }
+
+}

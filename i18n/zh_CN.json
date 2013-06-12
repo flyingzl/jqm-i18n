@@ -1,0 +1,22 @@
+{
+     "title": "国际化测试",
+	 "main": {
+		"header": "滑动效果展现",
+		"next": "下一页",
+		"footer": "我是Footer",
+		"value": "2",
+		"btn": "获得javascript模板内容"
+	 },
+	 
+	 "page2": {
+	 
+	     "next": {
+	     
+			"back": "返回",
+			"header": "内容展现",
+			"content": "我是内容",
+			"prev": "上一页"
+	     }
+	 }
+
+}

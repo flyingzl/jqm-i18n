@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+    <head >
+        <meta name="viewport"  content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta charset='utf-8' />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="stylesheet" href="libs/jquery.mobile-1.3.1.min.css" />
+    </head>
+    <body  style='visibility:hidden;'>
+        <div data-role="page" id='main' data-theme="b">
+            <div data-role="header" data-theme="b">
+                <h1 data-i18n="main.header"></h1>
+            </div>
+            <div data-role="content">
+				<p><a href="#next" data-transition="slide" data-i18n="main.next"></a></p>
+				<input data-i18n="main.header"  />
+				<textarea  data-i18n="main.header" ></textarea>
+				<select data-i18n="main.value" data-enhance = "false">
+					<option value="1">One</option>
+					<option value="2">Two</option>
+				</select>
+				<a data-role="button" data-i18n="main.btn" id="btn"></a>
+			</div>
+			
+			<div data-role='footer'>
+				<p style='margin-left:10px' data-i18n="main.footer"></p>
+			</div>
+			
+			<script type="text/tpl" id="tpl" >
+				<p data-i18n="main.next"></p>
+			</script>
+        </div>
+		
+        <div data-role="page" id='next' style="height:100%"  >
+            <div data-role="header" >
+            	<a href="#" data-role="button" data-back="true" data-rel="back" data-i18n="page2.next.back"></a>
+                <h1 data-i18n="page2.next.header"></h1>
+            </div>
+            <div data-role="content">
+            	<p data-i18n="page2.next.content"></p>
+				<p><a data-rel="back" href="#"  data-i18n="page2.next.prev"></a></p>
+			</div>
+			
+        </div>
+		<script src="libs/jquery-2.0.2.min.js"></script>
+		<script>
+			$(document).bind("mobileinit", function(){
+				// enable i18n
+				$.mobile.i18nEnabled = true;
+				//$.mobile.i18nFolder = "i18n"
+				$.mobile.ignoreContentEnabled = true;
+
+				$(document).delegate("#btn", "vclick", function(){
+
+					alert( $.trim( $("#tpl").html() ) );
+				});
+			});
+
+			$(function(){
+				$(document.body).css( "visibility", "visible") ;
+			});
+		
+		</script>
+		<script src="libs/jquery.mobile-1.3.1.min.js"></script>
+        <script src="i18n.js"></script>
+    </body>
+</html>
