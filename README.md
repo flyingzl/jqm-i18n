@@ -33,6 +33,7 @@ to use this plugin, you should do as follows：
 </script>
 <script src="libs/jquery.mobile-1.3.1.min.js"></script>
 <script src="i18n.js"></script>
+```
 
 Pay attention to the attribute `data-i18n`, the plugin will parse it and get its value from the i18n resources.Take en_US.json for an exmaple:
 
@@ -50,10 +51,11 @@ Pay attention to the attribute `data-i18n`, the plugin will parse it and get its
 	 }
 
 }
+```
 
 when set `<h1 data-i18n="main.header"></h1>`, the DOM will become `<h1 data-i18n="main.header">Slide Demo</h1>
 
-#TEST
+# TEST
 
 You can [download](https://github.com/flyingzl/jqm-i18n/archive/master.zip) the plugin and open your webkit-kernel browser to visit `slide.html` to see the effect.
 
