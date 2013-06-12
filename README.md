@@ -18,7 +18,7 @@ to use this plugin, you should do as follows：
 
 <div data-role="page" id='main' data-theme="b">
     <div data-role="header" data-theme="b">
-        <h1 data-i18n="main.header"></h1>
+        <h1 **data-i18n**="main.header"></h1>
     </div>
     <div data-role="content">
 		<a data-role="button" data-i18n="main.btn" id="btn"></a>
@@ -35,9 +35,9 @@ to use this plugin, you should do as follows：
 <script src="i18n.js"></script>
 ```
 
-Pay attention to the attribute `data-i18n`, the plugin will parse it and get its value from the i18n resources.Take en_US.json for an exmaple:
+Pay attention to the attribute `data-i18n`, the plugin will parse it and get its value from the i18n resources.Take `en_US.json` for an exmaple:
 
-```js
+``` js
 // file en_US.json
 
 {
@@ -53,7 +53,7 @@ Pay attention to the attribute `data-i18n`, the plugin will parse it and get its
 }
 ```
 
-when set `<h1 data-i18n="main.header"></h1>`, the DOM will become `<h1 data-i18n="main.header">Slide Demo</h1>
+when set `<h1 data-i18n="main.header"></h1>`, the DOM will become `<h1 data-i18n="main.header">Slide Demo</h1>`
 
 # TEST
 
